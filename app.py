@@ -151,5 +151,5 @@ else:
     if st.button("⬅ Back to Home"):
         st.session_state.started = False
         st.rerun()
-ote 👉")
+ote")
 st.write(" Sugar cub = 4g")
