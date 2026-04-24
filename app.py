@@ -110,7 +110,7 @@ else:
     }
 
     # ---------------- BUTTON ----------------
-    if st.button("🔥Calories          السعرات الحرارية"):
+    if st.button("🔥Estimated used Calories          السعرات الحرارية التقديرية المستهلكة"):
 
         calories = met_values[activity] * weight * (duration / 60)
 
@@ -137,11 +137,11 @@ else:
         col1, col2 = st.columns(2)
 
         with col1:
-            st.metric("🍬 Sugar (g) سكر", f"{carbs_g:.2f}")
+            st.metric("🍬 Estmated sugar burned (g) الكمية التقريبية من السكر ", f"{carbs_g:.2f}")
             st.caption(f"≈ {sugar_cubes:.1f} cubes de sucre 🧊مكعب صغير من السكر")
 
         with col2:
-            st.metric("🧈 Fat (g) دهون", f"{fat_g:.2f}")
+            st.metric("🧈Estmated Fat burned (g) الكمية التقريبية من الدهون", f"{fat_g:.2f}")
 
         # ---------------- FEEDBACK ----------------
         if calories < 100:
